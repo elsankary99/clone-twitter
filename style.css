@@ -1,0 +1,404 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: black;
+}
+
+header {
+  width: 30%;
+  height: 100%;
+  padding: 14px 0 14px 15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: fixed;
+}
+nav {
+  height: 70%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+a {
+  color: white;
+  text-decoration: none;
+  font-weight: 400;
+  line-height: 24px;
+  font-size: 1.5rem;
+}
+nav a {
+  padding: 8px 25px 8px 8px;
+  font-size: 2rem;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+}
+
+nav a:first-child i {
+  margin: 0;
+}
+nav a:first-child {
+  padding: 8px;
+}
+
+nav a:hover,
+.user-account a:hover {
+  background-color: rgb(47, 51, 54);
+  border-radius: 9999px;
+}
+
+nav a i {
+  font-size: 3rem;
+  margin-right: 15px;
+}
+
+nav a span {
+  font-size: 1.6rem;
+}
+nav button {
+  background-color: rgb(29, 155, 249);
+  color: white;
+  width: 90%;
+  height: 45px;
+  border-radius: 9999px;
+  margin-top: 15px;
+  font-size: 1.7rem;
+  font-weight: 700;
+  border: none;
+}
+
+nav button:hover,
+.submit-twitte button:hover {
+  background-color: rgba(29, 155, 249, 0.9);
+}
+/* ? user-account */
+
+.user-account {
+  height: 30%;
+  width: 100%;
+}
+
+.user-account a {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 128px;
+  padding: 8px 10px 8px 15px;
+  margin-right: 10px;
+}
+.account-details {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 70%;
+  font-size: 1.2rem;
+}
+
+.user-account img {
+  height: 38px;
+  width: 38px;
+  border-radius: 50%;
+  margin-right: 12px;
+}
+.account-name {
+  font-weight: 500;
+}
+.account-handle {
+  color: rgb(110, 118, 125);
+}
+
+/* ! Home */
+main {
+  margin-left: 30%;
+  width: 70%;
+  height: 100%;
+  display: flex;
+}
+
+.home-column {
+  width: 50%;
+  height: 100%;
+  border-left: 1.5px solid rgba(128, 128, 128, 0.5);
+  border-right: 1.5px solid rgba(128, 128, 128, 0.5);
+  display: flex;
+  flex-direction: column;
+}
+
+.app-bar {
+  width: 100%;
+  height: 55px;
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  align-items: center;
+  color: white;
+  padding: 0 12px;
+  font-size: 1.6rem;
+  top: 0px;
+  position: sticky;
+}
+.app-logo {
+  width: 30px;
+  height: 30px;
+}
+.add-twitte {
+  width: 100%;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.5);
+  display: flex;
+  padding-bottom: 28px;
+}
+
+.add-twitte img {
+  height: 48px;
+  width: 48px;
+  border-radius: 50%;
+  margin: 0 12px;
+}
+
+.twitte-section {
+  width: 100%;
+  padding-right: 12px;
+}
+
+.add-twitte input {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: white;
+  font-size: 1.5rem;
+  margin: 14px 0;
+}
+.submit-twitte {
+  width: 100%;
+  margin-top: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.submit-twitte ul {
+  display: flex;
+  color: rgba(38, 127, 199, 0.778);
+  list-style: none;
+}
+
+.submit-twitte li {
+  margin-right: 12px;
+  cursor: pointer;
+}
+.submit-twitte button {
+  background-color: rgb(29, 155, 249);
+  color: white;
+  height: 30px;
+  padding: 2px 14px;
+  border-radius: 9999px;
+  font-size: 1.4rem;
+  font-weight: 400;
+  border: none;
+  cursor: pointer;
+}
+
+.twitte-card {
+  padding: 16px 12px;
+  width: 100%;
+  display: flex;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.5);
+}
+
+.twitte-card img {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  margin-right: 12px;
+  cursor: pointer;
+}
+.card-column .twitte-user {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.twitte-user i {
+  color: gray;
+  cursor: pointer;
+}
+.user-info .user-name {
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-right: 5px;
+}
+
+.user-info .post-details {
+  color: rgba(128, 128, 128, 0.8);
+  font-size: 1.2rem;
+}
+
+.twitte-card p {
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-top: 4px;
+  margin-bottom: 8px;
+}
+
+.card-column ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  color: gray;
+  margin-top: 10px;
+}
+.card-column li {
+  cursor: pointer;
+}
+
+/* !search-column */
+
+.search-column {
+  width: 50%;
+  height: 100%;
+  padding: 12px 15% 0 14px;
+}
+
+.search-field {
+  width: 100%;
+  height: 45px;
+  background-color: black;
+  top: 0;
+  position: sticky;
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+}
+.search-field input {
+  background-color: rgba(92, 89, 89, 0.67);
+  width: 100%;
+  border-radius: 9999px;
+  padding: 10px 20px;
+  color: white;
+  border: none;
+  outline: none;
+}
+.trending {
+  width: 100%;
+  height: 70%;
+  background-color: rgba(49, 48, 48, 0.8);
+  border-radius: 12px;
+  padding: 10px;
+}
+
+.trending h2,
+.followers h2 {
+  color: white;
+  margin-bottom: 18px;
+}
+
+.hashtag-card {
+  width: 100%;
+  cursor: pointer;
+  margin-bottom: 24px;
+  animation-duration: 800ms;
+}
+.hashtag-card:hover {
+  background-color: rgba(91, 87, 87, 0.5);
+}
+.hashtag-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.hashtag-column .trend-name {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.hashtag-column .trend-number {
+  color: gray;
+  font-size: 1.2rem;
+}
+
+.trend-place {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  color: gray;
+  font-size: 1.2rem;
+}
+
+.show-more {
+  color: rgba(38, 127, 199, 0.778);
+  font-size: 1.5rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+/* !followers */
+.followers {
+  width: 100%;
+  height: 40%;
+  background-color: rgba(49, 48, 48, 0.8);
+  border-radius: 12px;
+  padding: 10px;
+  margin-top: 30px;
+}
+.follow-card {
+  width: 100%;
+  margin-bottom: 25px;
+  display: flex;
+  cursor: pointer;
+}
+.follow-card img {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  margin-right: 12px;
+  cursor: pointer;
+}
+.follow-row {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.follower-details {
+  display: flex;
+  flex-direction: column;
+}
+.follower-name {
+  color: white;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+.follower-user {
+  color: grey;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.follow-row button {
+  background-color: white;
+  color: black;
+  height: 30px;
+  padding: 2px 14px;
+  border-radius: 9999px;
+  font-size: 1.4rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+}
